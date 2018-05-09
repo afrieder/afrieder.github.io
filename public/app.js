@@ -19117,11 +19117,47 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var React = require("react");
 var App = /** @class */ (function (_super) {
     __extends(App, _super);
-    function App() {
-        return _super !== null && _super.apply(this, arguments) || this;
+    function App(props) {
+        var _this = _super.call(this, props) || this;
+        _this.formatDateString = function (date) {
+            var time = date.toTimeString().split(' ')[0];
+            return time + "." + date.getMilliseconds();
+        };
+        _this.updateTime = function () {
+            _this.setState({ dateString: _this.formatDateString(new Date()) });
+        };
+        _this.updateClass = function () {
+            _this.setState(function (_a) {
+                var even = _a.even;
+                return ({ even: !even });
+            });
+        };
+        _this.renderMarquee = function (message, scrollAmount, direction) {
+            return (
+            // @ts-ignore
+            React.createElement("marquee", { scrollamount: scrollAmount, direction: direction }, message));
+        };
+        _this.renderMailToLink = function () {
+            return (React.createElement("a", { className: "mailto", href: "mailto:alex.frieder@gmail.com" }, "Impressed by what you see? Contact me."));
+        };
+        _this.state = {
+            dateString: _this.formatDateString(new Date()),
+            even: true,
+        };
+        setInterval(_this.updateTime, 10);
+        setInterval(_this.updateClass, 1000);
+        return _this;
     }
     App.prototype.render = function () {
-        return (React.createElement("div", null, "Hello, World!"));
+        var className = this.state.even ? 'even' : 'odd';
+        var message = "The current time is " + this.state.dateString;
+        return (React.createElement("div", { className: className },
+            this.renderMarquee(message, 19, 'left'),
+            this.renderMarquee(message, 24, 'right'),
+            this.renderMarquee(message, 15, 'left'),
+            this.renderMarquee(message, 26, 'right'),
+            this.renderMarquee(message, 21, 'left'),
+            this.renderMailToLink()));
     };
     return App;
 }(React.Component));

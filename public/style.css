@@ -1,0 +1,25 @@
+div {
+  height: 105%;
+  width: 105%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+div.odd {
+  background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+}
+div.even {
+  background: linear-gradient(to left, red,orange,yellow,green,blue,indigo,violet);
+}
+marquee {
+  color: grey;
+  font-size: 100px;
+  padding-top: 50px;
+}
+a.mailto {
+  color: grey;
+  font-size: 16px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
