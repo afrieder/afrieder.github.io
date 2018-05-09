@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "target": "ES5",
+    "jsx": "react",
+    "outDir": "./public/js",
+
+    "alwaysStrict": true,
+    "noImplicitAny": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "strict": true,
+    "pretty": true,
+    "noUnusedLocals": true
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    ".git",
+    "public",
+    "node_modules"
+  ]
+}
