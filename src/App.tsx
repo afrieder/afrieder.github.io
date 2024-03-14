@@ -1,63 +1,32 @@
-import * as React from 'react';
+import * as React from "react";
 
-interface AppState {
-  dateString: string;
-  even: boolean;
-}
+import { PasswordView } from "./PasswordView";
+import { MainView } from "./MainView";
 
-class App extends React.Component<{}, AppState> {
-  private formatDateString = (date: Date): string => {
-    const [time] = date.toTimeString().split(' ');
-    return `${time}.${date.getMilliseconds()}`;
-  }
+type Page = "get_password" | "password_1" | "password_2";
 
-  private updateTime = (): void => {
-    this.setState({ dateString: this.formatDateString(new Date()) });
-  }
+// SERIOUSLY? You're looking at the source code of my wedding website?
+// Do you have that much time on your hands?
+// Anyway, hi! Send me a message letting me know that you saw this.
 
-  private updateClass = (): void => {
-    this.setState(({ even }) => ({ even: !even }));
-  }
+export const App: React.VFC = () => {
+  const [page, setPage] = React.useState<Page>("get_password");
 
-  constructor(props: {}) {
-    super(props);
-    this.state = {
-      dateString: this.formatDateString(new Date()),
-      even: true,
-    };
-    setInterval(this.updateTime, 10);
-    setInterval(this.updateClass, 1000);
-  }
-
-  renderMarquee = (message: string, scrollAmount: number, direction: 'left' | 'right'): JSX.Element => {
-    return (
-      // @ts-ignore
-      <marquee scrollamount={ scrollAmount } direction={ direction }>{ message }</marquee>
-    );
-  }
-
-  renderMailToLink = (): JSX.Element => {
-    return (
-      <a className="mailto" href="mailto:alex.frieder@gmail.com">
-        Impressed by what you see? Contact me.
-      </a>
-    );
-  }
-
-  render(): JSX.Element {
-    const className = this.state.even ? 'even' : 'odd';
-    const message = `The current time is ${ this.state.dateString }`;
-    return (
-      <div className={ className }>
-        { this.renderMarquee(message, 19, 'left') }
-        { this.renderMarquee(message, 24, 'right') }
-        { this.renderMarquee(message, 15, 'left') }
-        { this.renderMarquee(message, 26, 'right') }
-        { this.renderMarquee(message, 21, 'left') }
-        { this.renderMailToLink() }
+  return (
+    <div className="h-full w-full bg-slate-200 flex flex-col font-sans p-5 justify-between leading-relaxed">
+      <div className="self-center mt-5">
+        <h1 className="text-6xl font-light" style={{ fontFamily: "cursive" }}>
+          Alex and Arley's Wedding
+        </h1>
       </div>
-    );
-  }
+      <div className="border rounded border-slate-500 bg-slate-100 p-4 h-fit self-center w-fit">
+        {page === "get_password" ? (
+          <PasswordView setPage={setPage} />
+        ) : (
+          <MainView isPassword2={page === "password_2"} />
+        )}
+      </div>
+      <div />
+    </div>
+  );
 };
-
-export { App };
