@@ -28,7 +28,7 @@ export const InfoView: React.VFC<InfoViewProps> = ({ rsvped, onClickRsvp }) => {
         Your presence is truly enough; we kindly request no gifts.
         </div>
       <div>
-      <Header>Scavenger Hunt (Optional)</Header>
+      <Header>Scavenger Hunt</Header>
         Saturday, July 20, 2024  |  4:30 PM
         <br />
         Meeting location: <Link href="https://maps.app.goo.gl/wD47Ckz4tsVVmFM3A">Pulitzer Fountain,
@@ -36,8 +36,7 @@ export const InfoView: React.VFC<InfoViewProps> = ({ rsvped, onClickRsvp }) => {
         <br />
         For those who will be in town, we'll be hosting a private{" "}
         <Link href="https://secretcityny.com/central-park-scavenger-hunt">
-          scavenger hunt in Central Park
-        </Link>.{" "}
+          scavenger hunt in Central Park</Link>.
         <br />
         If you won't be in town yet or this just isn't your thing, that's
         absolutely fine! No pressure to attend.
