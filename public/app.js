@@ -20008,7 +20008,7 @@ For more info, visit https://fb.me/react-mock-scheduler`);
   var Button = (props) => /* @__PURE__ */ React.createElement(
     "button",
     {
-      className: "ml-auto rounded bg-slate-500 text-white self-end py-1 px-2",
+      className: "ml-auto rounded bg-blue-600 text-white self-end py-1 px-2",
       ...props
     }
   );
@@ -20236,13 +20236,13 @@ For more info, visit https://fb.me/react-mock-scheduler`);
           type: "radio"
         }
       )))
-    ), (attending || clickedAttending) && /* @__PURE__ */ React6.createElement("div", { className: animationClassName }, /* @__PURE__ */ React6.createElement(Section, { label: "Number of guests attending the wedding on Sunday" }, /* @__PURE__ */ React6.createElement(
+    ), (attending || clickedAttending) && /* @__PURE__ */ React6.createElement("div", { className: animationClassName }, /* @__PURE__ */ React6.createElement(Section, { label: "Number of guests attending the wedding on Sunday, July 21" }, /* @__PURE__ */ React6.createElement(
       Input,
       {
         value: attendingInfo.mainEventCount,
         onChange: handleChangeMainEventCount
       }
-    )), /* @__PURE__ */ React6.createElement(Section, { label: "Number of guests attending the scavenger hunt on Saturday" }, /* @__PURE__ */ React6.createElement(
+    )), /* @__PURE__ */ React6.createElement(Section, { label: "Number of guests attending the scavenger hunt on Saturday, July 20" }, /* @__PURE__ */ React6.createElement(
       Input,
       {
         value: attendingInfo.sideEventCount,
@@ -20257,7 +20257,7 @@ For more info, visit https://fb.me/react-mock-scheduler`);
     )), isPassword2 && /* @__PURE__ */ React6.createElement(
       Section,
       {
-        label: /* @__PURE__ */ React6.createElement(React6.Fragment, null, "How many/what kind of hotels rooms are we booking for you?", /* @__PURE__ */ React6.createElement("br", null), "And for which nights?")
+        label: /* @__PURE__ */ React6.createElement(React6.Fragment, null, "How many/what kind of hotel rooms are we booking for you?", /* @__PURE__ */ React6.createElement("br", null), "And for which nights?")
       },
       /* @__PURE__ */ React6.createElement(
         Input,
@@ -20269,7 +20269,6 @@ For more info, visit https://fb.me/react-mock-scheduler`);
     )), /* @__PURE__ */ React6.createElement(Section, { label: "Anything else you'd like us to know?" }, /* @__PURE__ */ React6.createElement(Input, { value: anythingElse, onChange: handleAnythingElseChange })), /* @__PURE__ */ React6.createElement("div", { className: "mt-2 flex" }, /* @__PURE__ */ React6.createElement(
       Button,
       {
-        className: "rounded bg-slate-500 text-white py-1 px-2 ml-auto self-end",
         disabled: !!disabledMessage,
         onClick: submitRsvp
       },
@@ -20292,11 +20291,11 @@ For more info, visit https://fb.me/react-mock-scheduler`);
 
   // src/Link.tsx
   var React8 = __toESM(require_react());
-  var Link = ({ href, children }) => /* @__PURE__ */ React8.createElement("a", { className: "underline text-blue-700", href }, children);
+  var Link = ({ href, children }) => /* @__PURE__ */ React8.createElement("a", { className: "underline text-blue-700", href, target: "_blank" }, children);
 
   // src/InfoView.tsx
   var InfoView = ({ rsvped, onClickRsvp }) => {
-    return /* @__PURE__ */ React9.createElement("div", { className: "flex flex-col" }, rsvped && /* @__PURE__ */ React9.createElement("span", { className: "text-green-700 mt-1" }, "Thanks for RSVPing!"), /* @__PURE__ */ React9.createElement("div", null, /* @__PURE__ */ React9.createElement(Header, null, "What?"), "Our wedding will be on Sunday, July 21 at", " ", /* @__PURE__ */ React9.createElement(Link, { href: "https://kymarestaurants.com" }, "Kyma"), ", located at 15 West 18th Street, New York, NY 10011.", /* @__PURE__ */ React9.createElement("br", null), "Expect a night of ceremony, socializing, food, and board games!", /* @__PURE__ */ React9.createElement("br", null), "We ask that you arrive at 6 pm in semi-formal dress.", /* @__PURE__ */ React9.createElement("br", null), "NO GIFTS\xA1", /* @__PURE__ */ React9.createElement("br", null), /* @__PURE__ */ React9.createElement("br", null), "In addition, for those who will be in town, we'll be hosting a private", " ", /* @__PURE__ */ React9.createElement(Link, { href: "https://secretcityny.com/central-park-scavenger-hunt" }, "scavenger hunt"), " ", "on Saturday, July 20.", /* @__PURE__ */ React9.createElement("br", null), "If you won't be in town yet or this just isn't your thing, that's absolutely fine! No pressure to attend.", /* @__PURE__ */ React9.createElement("br", null), "If you are planning to attend, please arrive at the Pulitzer Fountain at 764 Central Park S, New York, NY 10019 at 4:30 pm.", /* @__PURE__ */ React9.createElement("br", null), "Dress comfortably! Food to follow!"), /* @__PURE__ */ React9.createElement("div", null, /* @__PURE__ */ React9.createElement(Header, null, "Where?"), "We have group rates available for the nights of the 20th and 21st at:", /* @__PURE__ */ React9.createElement("br", null), "\u2022", " ", /* @__PURE__ */ React9.createElement(Link, { href: "https://www.marriott.com/event-reservations/reservation-link.mi?id=1706712016894&key=GRP&app=resvlink" }, "the SpringHill Suites Chelsea"), /* @__PURE__ */ React9.createElement("br", null), "\u2022", " ", /* @__PURE__ */ React9.createElement(Link, { href: "https://www.marriott.com/event-reservations/reservation-link.mi?id=1706284733030&key=GRP&app=resvlink" }, "the Renaissance Chelsea Hotel"), /* @__PURE__ */ React9.createElement("br", null), "\u2022", " ", /* @__PURE__ */ React9.createElement(Link, { href: "https://www.marriott.com/event-reservations/reservation-link.mi?id=1707740788443&key=GRP&app=resvlink" }, "Moxy Chelsea"), /* @__PURE__ */ React9.createElement("br", null), "(Click those links to book using our group rate)", /* @__PURE__ */ React9.createElement("br", null), "There's a limited number of rooms available but we can add more, so reach out to us if the groups have run out of rooms."), /* @__PURE__ */ React9.createElement("div", null, /* @__PURE__ */ React9.createElement(Header, null, "Who?"), "You, hopefully! Please RSVP by May 10th by clicking here:", /* @__PURE__ */ React9.createElement("br", null), /* @__PURE__ */ React9.createElement("div", { className: "mt-1" }), /* @__PURE__ */ React9.createElement(Button, { onClick: onClickRsvp }, "RSVP")));
+    return /* @__PURE__ */ React9.createElement("div", { className: "flex flex-col" }, rsvped && /* @__PURE__ */ React9.createElement("span", { className: "text-green-700 mt-1" }, "Thanks for RSVPing!"), /* @__PURE__ */ React9.createElement("div", null, /* @__PURE__ */ React9.createElement(Header, null, "Wedding Ceremony + Reception"), "Sunday, July 21, 2024  |  6:00 PM", /* @__PURE__ */ React9.createElement("br", null), /* @__PURE__ */ React9.createElement(Link, { href: "https://kymarestaurants.com" }, "Kyma Restaurant"), "  |  ", /* @__PURE__ */ React9.createElement(Link, { href: "https://maps.app.goo.gl/yFkPUBM6ZLpSfmqC7" }, " 15 West 18th Street, New York, NY"), /* @__PURE__ */ React9.createElement("br", null), "Expect a night of ceremony, socializing, food, and board games!", /* @__PURE__ */ React9.createElement("br", null), "Semi-formal attire.", /* @__PURE__ */ React9.createElement("br", null), "We're so grateful to you for celebrating with us. Your presence is truly enough; we kindly request no gifts."), /* @__PURE__ */ React9.createElement("div", null, /* @__PURE__ */ React9.createElement(Header, null, "Scavenger Hunt"), "Saturday, July 20, 2024  |  4:30 PM", /* @__PURE__ */ React9.createElement("br", null), "Meeting location: ", /* @__PURE__ */ React9.createElement(Link, { href: "https://maps.app.goo.gl/wD47Ckz4tsVVmFM3A" }, "Pulitzer Fountain, 764 Central Park S, New York, NY"), /* @__PURE__ */ React9.createElement("br", null), "For those who will be in town, we'll be hosting a private", " ", /* @__PURE__ */ React9.createElement(Link, { href: "https://secretcityny.com/central-park-scavenger-hunt" }, "scavenger hunt in Central Park"), ".", /* @__PURE__ */ React9.createElement("br", null), "If you won't be in town yet or this just isn't your thing, that's absolutely fine! No pressure to attend.", /* @__PURE__ */ React9.createElement("br", null), "Dress comfortably! Food to follow."), /* @__PURE__ */ React9.createElement("div", null, /* @__PURE__ */ React9.createElement(Header, null, "Hotel Options"), "We have group rates available for the nights of July 20 and 21 at:", /* @__PURE__ */ React9.createElement("br", null), "\u2022", " ", /* @__PURE__ */ React9.createElement(Link, { href: "https://www.marriott.com/event-reservations/reservation-link.mi?id=1706712016894&key=GRP&app=resvlink" }, "SpringHill Suites Chelsea"), /* @__PURE__ */ React9.createElement("br", null), "\u2022", " ", /* @__PURE__ */ React9.createElement(Link, { href: "https://www.marriott.com/event-reservations/reservation-link.mi?id=1706284733030&key=GRP&app=resvlink" }, "Renaissance New York Chelsea Hotel"), /* @__PURE__ */ React9.createElement("br", null), "\u2022", " ", /* @__PURE__ */ React9.createElement(Link, { href: "https://www.marriott.com/event-reservations/reservation-link.mi?id=1707740788443&key=GRP&app=resvlink" }, "Moxy NYC Chelsea"), /* @__PURE__ */ React9.createElement("br", null), "Click those links to book your room using our group rate by June 15.", /* @__PURE__ */ React9.createElement("br", null), "There's a limited number of rooms available but we can add more, so reach out to us if the groups have run out of rooms."), /* @__PURE__ */ React9.createElement("div", null, /* @__PURE__ */ React9.createElement(Header, null, "RSVP"), "We hope that you can join us! Please RSVP by May 10 by clicking here:", /* @__PURE__ */ React9.createElement("br", null), /* @__PURE__ */ React9.createElement("div", { className: "mt-1" }), /* @__PURE__ */ React9.createElement(Button, { onClick: onClickRsvp }, "RSVP")), /* @__PURE__ */ React9.createElement("div", null, /* @__PURE__ */ React9.createElement(Header, null, "Questions?"), "Reach out to Arley at (412) 576-7729 or Alex at (631) 278-1242."));
   };
 
   // src/MainView.tsx
@@ -20316,7 +20315,7 @@ For more info, visit https://fb.me/react-mock-scheduler`);
   // src/App.tsx
   var App = () => {
     const [page, setPage] = React11.useState("get_password");
-    return /* @__PURE__ */ React11.createElement("div", { className: "h-full w-full bg-slate-200 flex flex-col font-sans p-5 justify-between leading-relaxed" }, /* @__PURE__ */ React11.createElement("div", { className: "self-center mt-5" }, /* @__PURE__ */ React11.createElement("h1", { className: "text-6xl font-light", style: { fontFamily: "cursive" } }, "Alex and Arley's Wedding")), /* @__PURE__ */ React11.createElement("div", { className: "border rounded border-slate-500 bg-slate-100 p-4 h-fit self-center w-fit" }, page === "get_password" ? /* @__PURE__ */ React11.createElement(PasswordView, { setPage }) : /* @__PURE__ */ React11.createElement(MainView, { isPassword2: page === "password_2" })), /* @__PURE__ */ React11.createElement("div", null));
+    return /* @__PURE__ */ React11.createElement("div", { className: "h-full w-full bg-slate-200 flex flex-col font-sans p-5 justify-between leading-relaxed" }, /* @__PURE__ */ React11.createElement("div", { className: "self-center mt-5" }, /* @__PURE__ */ React11.createElement("h1", { className: "text-6xl font-light", style: { fontFamily: "cursive" } }, "Alex & Arley's Wedding")), /* @__PURE__ */ React11.createElement("div", { className: "border rounded border-slate-500 bg-slate-100 p-4 h-fit self-center w-fit" }, page === "get_password" ? /* @__PURE__ */ React11.createElement(PasswordView, { setPage }) : /* @__PURE__ */ React11.createElement(MainView, { isPassword2: page === "password_2" })), /* @__PURE__ */ React11.createElement("div", null));
   };
 
   // src/index.tsx

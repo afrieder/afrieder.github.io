@@ -175,13 +175,13 @@ export const RsvpForm: React.VFC<RsvpFormProps> = ({
       </Section>
       {(attending || clickedAttending) && (
         <div className={animationClassName}>
-          <Section label="Number of guests attending the wedding on Sunday">
+          <Section label="Number of guests attending the wedding on Sunday, July 21">
             <Input
               value={attendingInfo.mainEventCount}
               onChange={handleChangeMainEventCount}
             />
           </Section>
-          <Section label="Number of guests attending the scavenger hunt on Saturday">
+          <Section label="Number of guests attending the scavenger hunt on Saturday, July 20">
             <Input
               value={attendingInfo.sideEventCount}
               onChange={handleChangeSideEventCount}
@@ -197,7 +197,7 @@ export const RsvpForm: React.VFC<RsvpFormProps> = ({
             <Section
               label={
                 <>
-                  How many/what kind of hotels rooms are we booking for you?
+                  How many/what kind of hotel rooms are we booking for you?
                   <br />
                   And for which nights?
                 </>
@@ -216,7 +216,6 @@ export const RsvpForm: React.VFC<RsvpFormProps> = ({
       </Section>
       <div className="mt-2 flex">
         <Button
-          className="rounded bg-slate-500 text-white py-1 px-2 ml-auto self-end"
           disabled={!!disabledMessage}
           onClick={submitRsvp}
         >
