@@ -74,8 +74,6 @@ export const InfoView: React.VFC<InfoViewProps> = ({ rsvped, onClickRsvp }) => {
       <div>
         <Header>Questions?</Header>
         Reach out to Arley at 412-576-7729 or Alex at 631-278-1242.
-        <br />
-        <div className="mt-1" />
       </div>
     </div>
   );
