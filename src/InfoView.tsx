@@ -16,27 +16,35 @@ export const InfoView: React.VFC<InfoViewProps> = ({ rsvped, onClickRsvp }) => {
       )}
       <div>
         <Header>Wedding Ceremony + Reception</Header>
-        Sunday, July 21, 2024  |  6:00 PM
+        Sunday, July 21, 2024 | 6:00 PM
         <br />
-        <Link href="https://kymarestaurants.com">Kyma Restaurant</Link>  |  <Link href="https://maps.app.goo.gl/yFkPUBM6ZLpSfmqC7"> 15 West 18th Street, New York, NY</Link>
+        <Link href="https://kymarestaurants.com">Kyma Restaurant</Link> |{" "}
+        <Link href="https://maps.app.goo.gl/yFkPUBM6ZLpSfmqC7">
+          {" "}
+          15 West 18th Street, New York, NY
+        </Link>
         <br />
         Expect a night of ceremony, socializing, food, and board games!
         <br />
         Semi-formal attire.
         <br />
-        We're so grateful to you for celebrating with us.
-        Your presence is truly enough; we kindly request no gifts.
-        </div>
+        We're so grateful to you for celebrating with us. Your presence is truly
+        enough; we kindly request no gifts.
+      </div>
       <div>
-      <Header>Scavenger Hunt</Header>
-        Saturday, July 20, 2024  |  4:30 PM
+        <Header>Scavenger Hunt</Header>
+        Saturday, July 20, 2024 | 4:30 PM
         <br />
-        Meeting location: <Link href="https://maps.app.goo.gl/wD47Ckz4tsVVmFM3A">Pulitzer Fountain,
-        764 Central Park S, New York, NY</Link>
+        Meeting location:{" "}
+        <Link href="https://maps.app.goo.gl/wD47Ckz4tsVVmFM3A">
+          Pulitzer Fountain, 764 Central Park S, New York, NY
+        </Link>
         <br />
         For those who will be in town, we'll be hosting a private{" "}
         <Link href="https://secretcityny.com/central-park-scavenger-hunt">
-          scavenger hunt in Central Park</Link>.
+          scavenger hunt in Central Park
+        </Link>
+        .
         <br />
         If you won't be in town yet or this just isn't your thing, that's
         absolutely fine! No pressure to attend.
@@ -66,7 +74,7 @@ export const InfoView: React.VFC<InfoViewProps> = ({ rsvped, onClickRsvp }) => {
       </div>
       <div>
         <Header>RSVP</Header>
-        We hope that you can join us! Please RSVP by May 10 by clicking here:
+        We hope that you can join us! Please RSVP by June 1 by clicking here:
         <br />
         <div className="mt-1" />
         <Button onClick={onClickRsvp}>RSVP</Button>
