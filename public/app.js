@@ -20236,7 +20236,7 @@ For more info, visit https://fb.me/react-mock-scheduler`);
           type: "radio"
         }
       )))
-    ), (attending || clickedAttending) && /* @__PURE__ */ React6.createElement("div", { className: animationClassName }, /* @__PURE__ */ React6.createElement(Section, { label: "Number of guests attending the wedding on Sunday, July 21" }, /* @__PURE__ */ React6.createElement(
+    ), (attending || clickedAttending) && /* @__PURE__ */ React6.createElement("div", { className: `${animationClassName} overflow-hidden` }, /* @__PURE__ */ React6.createElement(Section, { label: "Number of guests attending the wedding on Sunday, July 21" }, /* @__PURE__ */ React6.createElement(
       Input,
       {
         value: attendingInfo.mainEventCount,

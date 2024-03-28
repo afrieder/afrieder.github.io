@@ -601,12 +601,10 @@ video {
 
 @keyframes fade-in {
   0% {
-    opacity: 0;
     height: 0px;
   }
 
   100% {
-    opacity: 1;
     height: 222px;
   }
 }
@@ -617,12 +615,10 @@ video {
 
 @keyframes fade-in-tall {
   0% {
-    opacity: 0;
     height: 0px;
   }
 
   100% {
-    opacity: 1;
     height: 322px;
   }
 }
@@ -633,17 +629,10 @@ video {
 
 @keyframes fade-out {
   0% {
-    opacity: 1;
-    height: 222px;
-  }
-
-  20% {
-    opacity: 0.8;
     height: 222px;
   }
 
   100% {
-    opacity: 0;
     height: 0px;
   }
 }
@@ -654,17 +643,10 @@ video {
 
 @keyframes fade-out-tall {
   0% {
-    opacity: 1;
-    height: 322px;
-  }
-
-  20% {
-    opacity: 0.8;
     height: 322px;
   }
 
   100% {
-    opacity: 0;
     height: 0px;
   }
 }
@@ -703,6 +685,10 @@ video {
 
 .self-center {
   align-self: center;
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
 
 .rounded {
