@@ -215,12 +215,9 @@ export const RsvpForm: React.VFC<RsvpFormProps> = ({
         <Input value={anythingElse} onChange={handleAnythingElseChange} />
       </Section>
       <div className="mt-2 flex">
-        <Button
-          disabled={!!disabledMessage}
-          onClick={submitRsvp}
-        >
+        <Button disabled={!!disabledMessage} onClick={submitRsvp}>
           <div
-            title={disabledMessage ?? ""}
+            title={disabledMessage ?? "Submit RSVP"}
             className={`before:content-['Submit_RSVP'] hover:before:content-[attr(title)]`}
           />
         </Button>
