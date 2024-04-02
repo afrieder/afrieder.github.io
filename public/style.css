@@ -590,6 +590,10 @@ video {
   height: 100%;
 }
 
+.min-h-20 {
+  min-height: 5rem;
+}
+
 .w-fit {
   width: -moz-fit-content;
   width: fit-content;
