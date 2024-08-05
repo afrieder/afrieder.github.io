@@ -216,6 +216,7 @@ export const RsvpForm: React.VFC<RsvpFormProps> = ({
       </Section>
       <div className="mt-2 flex">
         <Button
+          className="rounded bg-slate-500 text-white py-1 px-2 ml-auto self-end"
           disabled={!!disabledMessage}
           onClick={submitRsvp}
         >
