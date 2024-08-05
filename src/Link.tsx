@@ -6,7 +6,7 @@ interface LinkProps {
 }
 
 export const Link: React.VFC<LinkProps> = ({ href, children }) => (
-  <a className="underline text-blue-700" href={href} target="_blank">
+  <a className="underline text-blue-700" href={href}>
     {children}
   </a>
 );
