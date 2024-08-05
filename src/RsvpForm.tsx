@@ -174,7 +174,7 @@ export const RsvpForm: React.VFC<RsvpFormProps> = ({
         </div>
       </Section>
       {(attending || clickedAttending) && (
-        <div className={`${animationClassName} overflow-hidden`}>
+        <div className={animationClassName}>
           <Section label="Number of guests attending the wedding on Sunday, July 21">
             <Input
               value={attendingInfo.mainEventCount}
