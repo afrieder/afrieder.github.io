@@ -20266,13 +20266,20 @@ For more info, visit https://fb.me/react-mock-scheduler`);
           onChange: handleChangeHotelInfo
         }
       )
-    )), /* @__PURE__ */ React6.createElement(Section, { label: "Anything else you'd like us to know?" }, /* @__PURE__ */ React6.createElement(Input, { value: anythingElse, onChange: handleAnythingElseChange })), /* @__PURE__ */ React6.createElement("div", { className: "mt-2 flex" }, /* @__PURE__ */ React6.createElement(Button, { disabled: !!disabledMessage, onClick: submitRsvp }, /* @__PURE__ */ React6.createElement(
-      "div",
+    )), /* @__PURE__ */ React6.createElement(Section, { label: "Anything else you'd like us to know?" }, /* @__PURE__ */ React6.createElement(Input, { value: anythingElse, onChange: handleAnythingElseChange })), /* @__PURE__ */ React6.createElement("div", { className: "mt-2 flex" }, /* @__PURE__ */ React6.createElement(
+      Button,
       {
-        title: disabledMessage ?? "Submit RSVP",
-        className: `before:content-['Submit_RSVP'] hover:before:content-[attr(title)]`
-      }
-    ))));
+        disabled: !!disabledMessage,
+        onClick: submitRsvp
+      },
+      /* @__PURE__ */ React6.createElement(
+        "div",
+        {
+          title: disabledMessage ?? "",
+          className: `before:content-['Submit_RSVP'] hover:before:content-[attr(title)]`
+        }
+      )
+    )));
   };
 
   // src/InfoView.tsx
