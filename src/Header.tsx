@@ -5,5 +5,5 @@ interface HeaderProps {
 }
 
 export const Header: React.VFC<HeaderProps> = ({ children }) => (
-  <h1 className="text-xl font-bold mt-3">{children}</h1>
+  <h1 className="text-lg font-medium mt-3">{children}</h1>
 );

@@ -14,9 +14,8 @@ export const InfoView: React.VFC<InfoViewProps> = ({ rsvped, onClickRsvp }) => {
       {rsvped && (
         <span className="text-green-700 mt-1">Thanks for RSVPing!</span>
       )}
-      <Header>Schedule</Header>
       <div>
-        <h1 className="font-bold mt-3">Wedding Ceremony + Reception</h1>
+        <Header>Wedding Ceremony + Reception</Header>
         Sunday, July 21, 2024 | 6:00 PM
         <br />
         <Link href="https://kymarestaurants.com">Kyma Restaurant</Link> |{" "}
@@ -29,11 +28,11 @@ export const InfoView: React.VFC<InfoViewProps> = ({ rsvped, onClickRsvp }) => {
         <br />
         Semi-formal attire.
         <br />
-        We're so grateful to you for celebrating with us! Your presence is truly
+        We're so grateful to you for celebrating with us. Your presence is truly
         enough; we kindly request no gifts.
       </div>
       <div>
-        <h1 className="font-bold mt-3">Scavenger Hunt</h1>
+        <Header>Scavenger Hunt</Header>
         Saturday, July 20, 2024 | 4:30 PM
         <br />
         Meeting location:{" "}

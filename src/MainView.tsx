@@ -22,7 +22,10 @@ export const MainView: React.VFC<MainViewProps> = ({ isPassword2 }) => {
 
   return (
     <div>
-      <h2 className="text-xl">🎉 We're so excited to celebrate with you! 🎉</h2>
+      <h2 className="text-xl font-semibold">
+        We're so excited to have you at our wedding!
+      </h2>
+
       {showingRsvp ? (
         <RsvpForm isPassword2={isPassword2} onSubmitRsvp={handleSubmitRsvp} />
       ) : (
