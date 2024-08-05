@@ -12,12 +12,7 @@
     "noImplicitReturns": true,
     "strict": true,
     "pretty": true,
-    "noUnusedLocals": true,
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ]
+    "noUnusedLocals": true
   },
   "include": [
     "src/**/*"
