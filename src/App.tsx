@@ -15,10 +15,7 @@ export const App: React.VFC = () => {
   return (
     <div className="h-full w-full bg-slate-200 flex flex-col font-sans p-5 justify-between leading-relaxed">
       <div className="self-center mt-5">
-        <h1
-          className="text-6xl font-light min-h-20"
-          style={{ fontFamily: "cursive" }}
-        >
+        <h1 className="text-6xl font-light" style={{ fontFamily: "cursive" }}>
           Alex & Arley's Wedding
         </h1>
       </div>

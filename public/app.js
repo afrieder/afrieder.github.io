@@ -20308,14 +20308,7 @@ For more info, visit https://fb.me/react-mock-scheduler`);
   // src/App.tsx
   var App = () => {
     const [page, setPage] = React11.useState("get_password");
-    return /* @__PURE__ */ React11.createElement("div", { className: "h-full w-full bg-slate-200 flex flex-col font-sans p-5 justify-between leading-relaxed" }, /* @__PURE__ */ React11.createElement("div", { className: "self-center mt-5" }, /* @__PURE__ */ React11.createElement(
-      "h1",
-      {
-        className: "text-6xl font-light min-h-20",
-        style: { fontFamily: "cursive" }
-      },
-      "Alex & Arley's Wedding"
-    )), /* @__PURE__ */ React11.createElement("div", { className: "border rounded border-slate-500 bg-slate-100 p-4 h-fit self-center w-fit" }, page === "get_password" ? /* @__PURE__ */ React11.createElement(PasswordView, { setPage }) : /* @__PURE__ */ React11.createElement(MainView, { isPassword2: page === "password_2" })), /* @__PURE__ */ React11.createElement("div", null));
+    return /* @__PURE__ */ React11.createElement("div", { className: "h-full w-full bg-slate-200 flex flex-col font-sans p-5 justify-between leading-relaxed" }, /* @__PURE__ */ React11.createElement("div", { className: "self-center mt-5" }, /* @__PURE__ */ React11.createElement("h1", { className: "text-6xl font-light", style: { fontFamily: "cursive" } }, "Alex & Arley's Wedding")), /* @__PURE__ */ React11.createElement("div", { className: "border rounded border-slate-500 bg-slate-100 p-4 h-fit self-center w-fit" }, page === "get_password" ? /* @__PURE__ */ React11.createElement(PasswordView, { setPage }) : /* @__PURE__ */ React11.createElement(MainView, { isPassword2: page === "password_2" })), /* @__PURE__ */ React11.createElement("div", null));
   };
 
   // src/index.tsx
